@@ -30,3 +30,6 @@
 
 # broccoli-debug
 /DEBUG/
+
+# mac
+.DS_Store
