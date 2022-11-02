@@ -2,13 +2,7 @@
 
 module.exports = {
   test_page: 'tests/index.html?hidepassed',
-  src_files: [
-    'app/**/*.js',
-    'app/**/*.ts',
-    'spec/**/*.js',
-    'tests/*_tests.js',
-    'app/**/*_tests.js',
-  ],
+  src_files: ['app/**/*.js', 'app/**/*.ts', 'spec/**/*.js'],
   disable_watching: true,
   launch_in_ci: ['Safari'],
   launch_in_dev: ['Safari'],
