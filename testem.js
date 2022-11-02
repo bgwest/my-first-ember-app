@@ -2,9 +2,10 @@
 
 module.exports = {
   test_page: 'tests/index.html?hidepassed',
+  src_files: ['app/**/*.js', 'app/**/*.ts', 'spec/**/*.js'],
   disable_watching: true,
-  launch_in_ci: ['Chrome'],
-  launch_in_dev: ['Chrome'],
+  launch_in_ci: ['Chrome'], // we need to use chrome for CI or GitHub Action tests fail
+  launch_in_dev: ['Safari'],
   browser_start_timeout: 120,
   browser_args: {
     Chrome: {
